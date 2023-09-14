@@ -26,3 +26,7 @@ or
 ### Tools (debug & more...) ###
 ``` symfony console ```  
 ``` symfony list ```  
+
+#### Template plugin ####
+``` composer require templates ```  
+
