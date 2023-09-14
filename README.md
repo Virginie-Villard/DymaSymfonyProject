@@ -23,10 +23,16 @@ Create a new project
 or  
 ``` symfony serve -d ```
 
-### Tools (debug & more...) ###
+### Tools ###
+#### debug & more... ####
 ``` symfony console ```  
 ``` symfony list ```  
+``` composer recipes ``` shows the symfony/flex recipes.  
+``` composer recipes simfony/twig-bundle ```  
 
 #### Template plugin ####
+It's a pack of 3 plugin.
 ``` composer require templates ```  
+or  
+``` composer require symfony/twig-pack ```
 
