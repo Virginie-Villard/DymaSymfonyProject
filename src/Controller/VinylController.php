@@ -21,7 +21,7 @@ class VinylController extends AbstractController
             [ 'song' => "On Bended Knee", 'artist' => "Boys II men"],
             [ 'song' => "Fantasy", 'artist' => "Mariah Carey"],
         ];
-        dd($tracks);
+        dump($tracks);
 
         /**
          * Common : directory name = same name of the class (vinyl)
