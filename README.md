@@ -41,6 +41,11 @@ Add debug bar :
 ``` composer require debug ``` is a flex alias of :
 ``` symfony/debug-pack ```
 
+#### Mark directory as resource ####
+right click on directory, mark directory as, resource root
+
 ### Twig ###
 
 Twig tags, filters, functions, tests : https://twig.symfony.com/doc/3.x/
+
+
