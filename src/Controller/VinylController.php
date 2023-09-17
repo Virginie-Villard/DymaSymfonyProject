@@ -20,6 +20,7 @@ class VinylController extends AbstractController
             [ 'song' => "Kiss from a Rose", 'artist' => "Seal"],
             [ 'song' => "On Bended Knee", 'artist' => "Boys II men"],
             [ 'song' => "Fantasy", 'artist' => "Mariah Carey"],
+            ['song' => "Take a Bow", 'artist' => "Madonna"],
         ];
 
         /**
