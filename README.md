@@ -44,6 +44,10 @@ Add debug bar :
 #### Mark directory as resource ####
 right click on directory, mark directory as, resource root
 
+#### Add asset function ####
+``` composer require symfony/asset ```  
+help to prefix URL with the path and help il I use a CDN later.
+
 ### Twig ###
 
 Twig tags, filters, functions, tests : https://twig.symfony.com/doc/3.x/
