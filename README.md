@@ -37,6 +37,7 @@ or
 ``` composer require symfony/twig-pack ```
 
 #### Debug plugin ####
+Add debug bar :
 ``` composer require debug ``` is a flex alias of :
 ``` symfony/debug-pack ```
 
