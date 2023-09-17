@@ -50,16 +50,11 @@ class VinylController extends AbstractController
          * function u comes from symfony to format strings :
          * Here it take the genre in the url and give it in the page without '-' but with uppercase
          */
-        if ($slug)
-        {
-            $title = 'Genre : '.u(str_replace('-',' ',$slug))->title(true);
-        }
-        else
-        {
-            $title = ('All genres');
-        }
+        $genre = $slug ? u(str_replace('-',' ',$slug))->title(true) : null;
 
-        return new Response($title);
+        return $this->render('vinyl/browse.html.twig', [
+            "genre" => $genre
+        ]);
     }
 }
 
