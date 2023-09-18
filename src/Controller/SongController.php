@@ -12,7 +12,7 @@ class SongController extends AbstractController
     // Click on the Route class to see all the arguments usable :
     // We can see in the ```php bin/console debug:router``` the GET method :
     #[Route('/api/songs/{id}', methods: 'GET')]
-    public function getSong($id) : Response
+    public function getSong(int $id) : Response
     {
         // TODO : query the database
 
