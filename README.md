@@ -70,3 +70,15 @@ help to prefix URL with the path and help il I use a CDN later.
 Twig tags, filters, functions, tests : https://twig.symfony.com/doc/3.x/
 
 
+### Services ###
+= An object that does work (Twig, Logger, Database Connection, Cache, API requests, Router.....)
+Like templating object that renders a template or a database connection that makes queries
+
+#### Logger service ####
+``` php bin/console debug:autowiring ```
+
+```  php bin/console debug:autowiring log ```
+example : public/captures/Screenshot 2023-09-18 at 17.00.54.png
+
+
+
