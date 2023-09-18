@@ -32,7 +32,15 @@ or
 or  
 ``` ./bin/console ``` 
 ##### debug #####
-``` php bin/console debug:router ```
+``` php bin/console debug:router ```  
+example : public/captures/Screenshot 2023-09-18 at 14.21.46.png
+
+Check the route :  
+``` php bin/console router:match /api/songs/11 ```  
+example : public/captures/Screenshot 2023-09-18 at 15.16.28.png
+and  
+``` php bin/console router:match /api/songs/11 --method=POST ```
+example : public/captures/Screenshot 2023-09-18 at 15.19.02.png
 
 ##### recipes #####
 ``` symfony list ```  
