@@ -2,6 +2,7 @@
 
 namespace App\Controller;
 
+use Psr\Log\LoggerInterface;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\JsonResponse;
 use Symfony\Component\HttpFoundation\Response;
@@ -13,7 +14,7 @@ class SongController extends AbstractController
     // We can see in the ```php bin/console debug:router``` the GET method :
     // Add Regex to control the format of the id to be a number to avoid 500 error but have a 404 :
     #[Route('/api/songs/{id<\d+>}', methods: 'GET')]
-    public function getSong(int $id) : Response
+    public function getSong(int $id, LoggerInterface $logger) : Response
     {
         // TODO : query the database
 
@@ -22,6 +23,8 @@ class SongController extends AbstractController
             "name" => "Waterfalls",
             "url" => "https://symfonycasts.s3.amazonaws.com/sample.mp3",
         ];
+
+        $logger->info('Returning API Response for song '.$id);
 
         // Because SongController extends AbstractController, we can use the JsonResponse :
         return $this->json($song);
