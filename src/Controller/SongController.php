@@ -11,7 +11,8 @@ class SongController extends AbstractController
 {
     // Click on the Route class to see all the arguments usable :
     // We can see in the ```php bin/console debug:router``` the GET method :
-    #[Route('/api/songs/{id}', methods: 'GET')]
+    // Add Regex to control the format of the id to be a number to avoid 500 error but have a 404 :
+    #[Route('/api/songs/{id<\d+>}', methods: 'GET')]
     public function getSong(int $id) : Response
     {
         // TODO : query the database
