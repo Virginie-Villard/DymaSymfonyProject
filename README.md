@@ -76,6 +76,14 @@ Like templating object that renders a template or a database connection that mak
 
 #### Logger service ####
 ``` php bin/console debug:autowiring ```
+To see the logs : 
+in the config/packages/monolog.yaml file  
+or  
+click to go to the homepage and click on debug bar and then "Logs"  
+or  
+http://localhost:8000/_profiler
+
+
 
 ```  php bin/console debug:autowiring log ```
 example : public/captures/Screenshot 2023-09-18 at 17.00.54.png
