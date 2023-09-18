@@ -25,7 +25,16 @@ or
 
 ### Tools ###
 #### debug & more... ####
+##### list of commands #####
 ``` symfony console ```  
+or  
+``` php bin/console ```  
+or  
+``` ./bin/console ``` 
+##### debug #####
+``` php bin/console debug:router ```
+
+##### recipes #####
 ``` symfony list ```  
 ``` composer recipes ``` shows the symfony/flex recipes.  
 ``` composer recipes simfony/twig-bundle ```  

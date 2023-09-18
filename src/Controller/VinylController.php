@@ -9,7 +9,7 @@ use function Symfony\Component\String\u;
 
 class VinylController extends AbstractController
 {
-    #[Route('/')]
+    #[Route('/', name: "app_homepage")]
     public function homepage() : Response
     {
 
@@ -43,7 +43,7 @@ class VinylController extends AbstractController
      *
      * $slug = null -> slug becomes optional in the url
      */
-    #[Route('/browse/{slug}')]
+    #[Route('/browse/{slug}', name: "app_browse")]
     public function browse(String $slug = null) : Response
     {
         /**
