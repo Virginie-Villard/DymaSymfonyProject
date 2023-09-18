@@ -24,7 +24,9 @@ class SongController extends AbstractController
             "url" => "https://symfonycasts.s3.amazonaws.com/sample.mp3",
         ];
 
-        $logger->info('Returning API Response for song '.$id);
+        $logger->info('Returning API Response for song {song}.', [
+            'song' => $id,
+        ]);
 
         // Because SongController extends AbstractController, we can use the JsonResponse :
         return $this->json($song);
