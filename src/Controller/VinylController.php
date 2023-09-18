@@ -5,13 +5,12 @@ namespace App\Controller;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
-use Twig\Environment;
 use function Symfony\Component\String\u;
 
 class VinylController extends AbstractController
 {
     #[Route('/', name: "app_homepage")]
-    public function homepage(Environment $twig) : Response
+    public function homepage() : Response
     {
 
         $tracks = [
@@ -31,13 +30,11 @@ class VinylController extends AbstractController
          * first argument = the name of the template
          * second argument = an array with all the variables I want to pass into the template.
          */
-        $html= $twig->render('vinyl/homepage.html.twig',
+        return $this->render('vinyl/homepage.html.twig',
         [
             'title' => 'PB & Jams',
             'tracks' => $tracks
         ]);
-
-        return new Response($html);
     }
 
     /**
