@@ -5,6 +5,9 @@
 Documentation Tutorial :  
 https://symfonycasts.com/screencast/symfony/route-controller#play
 
+Documentation :  
+https://symfony.com/doc/current/index.html
+
 ## Commands ##
 
 ### Install ###
@@ -81,12 +84,19 @@ in the config/packages/monolog.yaml file
 or  
 click to go to the homepage and click on debug bar and then "Logs"  
 or  
-http://localhost:8000/_profiler
-
-
+http://localhost:8000/_profiler (careful of the "_") shows the last ten requests of our system.  
+click the token link.  
 
 ```  php bin/console debug:autowiring log ```
 example : public/captures/Screenshot 2023-09-18 at 17.00.54.png
+
+use the commit "776765eb", "Update VinylController.php to not use shortcut render but to render the template via the twig service"  
+if I need to render a template but I'm not in a controller. 
+
+#### Webpack Encore (use Node in a Symfony app) ####
+Documentation : https://symfony.com/doc/current/frontend.html#webpack-encore
+Free tutorial : https://symfonycasts.com/screencast/webpack-encore
+
 
 
 
